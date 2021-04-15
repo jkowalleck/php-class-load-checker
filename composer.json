@@ -19,5 +19,17 @@
     "prefer-stable": true,
     "require-dev": {
         "roave/security-advisories": "dev-latest"
+    },
+    "scripts": {
+        "dev-setup": [
+            "@composer update"
+        ],
+        "test": [
+            "@composer validate"
+        ]
+    },
+    "scripts-descriptions": {
+        "dev-setup": "Install dev-requirements and tools.",
+        "test": "Run all tests!"
     }
 }
