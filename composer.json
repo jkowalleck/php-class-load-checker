@@ -18,6 +18,7 @@
     },
     "prefer-stable": true,
     "require-dev": {
+        "phpunit/phpunit": "^9.5",
         "roave/security-advisories": "dev-latest"
     },
     "scripts": {
@@ -25,11 +26,14 @@
             "@composer update"
         ],
         "test": [
-            "@composer validate"
-        ]
+            "@composer validate",
+            "@test:phpunit"
+        ],
+        "test:phpunit" : "@php -d zend.assertions=1 -d assert.exception=1 -d display_errors=On -d error_reporting=-1 -d log_errors_max_len=0 -d memory_limit=-1 vendor/phpunit/phpunit/phpunit"
     },
     "scripts-descriptions": {
         "dev-setup": "Install dev-requirements and tools.",
-        "test": "Run all tests!"
+        "test": "Run all tests!",
+        "test:phpunit": "Run tests with PHPUnit."
     }
 }
