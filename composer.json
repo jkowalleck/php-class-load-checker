@@ -12,6 +12,11 @@
             "role": "Developer"
         }
     ],
+    "config": {
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "prefer-stable": true,
     "require-dev": {
         "roave/security-advisories": "dev-latest"
     }
