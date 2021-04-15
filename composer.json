@@ -1,0 +1,17 @@
+{
+    "name": "jkowalleck/class-load-checker",
+    "type": "library",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/jkowalleck/php-class-load-checker/issues"
+    },
+    "authors": [
+        {
+            "name": "Jan Kowalleck",
+            "role": "Developer"
+        }
+    ],
+    "require-dev": {
+        "roave/security-advisories": "dev-latest"
+    }
+}
