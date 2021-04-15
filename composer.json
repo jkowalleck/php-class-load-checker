@@ -1,5 +1,6 @@
 {
     "name": "jkowalleck/class-load-checker",
+    "description": "Search classes/interfaces/traits and check if they can be loaded.",
     "type": "library",
     "license": "MIT",
     "support": {
